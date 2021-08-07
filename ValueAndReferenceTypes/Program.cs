@@ -20,6 +20,7 @@ namespace ValueAndReferenceTypes
             Console.WriteLine(sayilar1[0]);
             //Sonuc 999
             //sayilar1 verileri artık tutulmaz çünkü 101 adresinin tutan(eşleşen yoktur)
+            //101 adresini referans alan olmadığı için işlevsizdir ve bu adresi .net core'un garbage collector adında çöp toplayıcı bellekten atacaktır.
         }
     }
 }

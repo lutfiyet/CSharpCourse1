@@ -18,7 +18,7 @@ namespace Methods
             product2.Explanation = "Diyarbakır Karpuzu";
 
             Product[] products = new Product[] {product1,product2};
-            //type-safe : tip güvenliği
+            //type-safe : tip güvenli
             foreach (Product product in products)
             {
                 Console.WriteLine(product.Name);
@@ -30,6 +30,7 @@ namespace Methods
             Console.WriteLine("********Metotlar*********");
             Console.WriteLine("Metot 1 Solid");
             //instance - örnek
+            //encapsulation
             BasketManager basketManager = new BasketManager();
             basketManager.Add(product1);
             basketManager.Add(product2);
@@ -38,6 +39,7 @@ namespace Methods
             basketManager.Add2("Armut","Taze",15);
             basketManager.Add2("Elma", "Amasya Elması", 10);
             basketManager.Add2("Kayısı", "Malatya", 7);
+            basketManager.Add2("ZAA","Xd",5.5);
             /*Add2 metodunda herhangi bir parametre ekleme durumunda
              tüm sayfalar hata verecektir tek tek girmek gereklidir
              o yüzden solid değildir*/
